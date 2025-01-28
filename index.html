@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autolimarski Servis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #555;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            background: url('car-repair.jpg') no-repeat center/cover;
+            color: white;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 18px;
+        }
+        section {
+            padding: 20px;
+        }
+        .services, .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .services div, .gallery div {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Autolimarski Servis</h1>
+        <p>Specijalisti za ispravljanje udubljenja bez lakiranja</p>
+    </header>
+    <nav>
+        <a href="#about">O nama</a>
+        <a href="#services">Usluge</a>
+        <a href="#gallery">Galerija</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+    <div class="hero">
+        <h1>Vrhunska usluga za vaš automobil</h1>
+        <p>Kontaktirajte nas danas za besplatnu procenu!</p>
+    </div>
+    <section id="about">
+        <h2>O nama</h2>
+        <p>Mi smo iskusni stručnjaci sa dugogodišnjim iskustvom u autolimarskim radovima. Naš cilj je da vaš automobil izgleda kao nov.</p>
+    </section>
+    <section id="services">
+        <h2>Usluge</h2>
+        <div class="services">
+            <div>
+                <h3>Ispravljanje udubljenja</h3>
+                <p>Efikasno uklanjamo udubljenja bez potrebe za lakiranjem.</p>
+            </div>
+            <div>
+                <h3>Poliranje</h3>
+                <p>Vašem automobilu vraćamo sjaj.</p>
+            </div>
+            <div>
+                <h3>Zaštita karoserije</h3>
+                <p>Produžite vek trajanja vašeg automobila.</p>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <h2>Galerija</h2>
+        <div class="gallery">
+            <div>
+                <img src="before1.jpg" alt="Pre servisa">
+                <p>Pre servisa</p>
+            </div>
+            <div>
+                <img src="after1.jpg" alt="Posle servisa">
+                <p>Posle servisa</p>
+            </div>
+            <div>
+                <img src="before2.jpg" alt="Pre servisa">
+                <p>Pre servisa</p>
+            </div>
+            <div>
+                <img src="after2.jpg" alt="Posle servisa">
+                <p>Posle servisa</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <div class="contact-form">
+            <form action="#">
+                <input type="text" placeholder="Vaše ime" required>
+                <input type="email" placeholder="Vaš e-mail" required>
+                <textarea placeholder="Vaša poruka" rows="5" required></textarea>
+                <button type="submit">Pošalji</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Autolimarski Servis. Sva prava zadržana.</p>
+    </footer>
+</body>
+</html>
